@@ -1,2 +1,2 @@
 # site
-https://kompalalokesh.github.io/site/
+# https://kompalalokesh.github.io/site/
