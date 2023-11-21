@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wrapText.css">
+    <script src="https://kit.fontawesome.com/265b320ee8.js" crossorigin="anonymous"></script>
+    <script src="const/googleSheetConst.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div>
+                    <span style="color:red;">KOMPALA&nbsp;</span><span style="color: white;">LOKESH</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+                <h1>Hi, I'm <br>Lokesh <span style="color: red;">Kompala</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------About------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima veniam accusantium
+                        molestiae ratione quibusdam nemo ullam asperiores non ad commodi ipsum repellat dolorem, quaerat
+                        et ex eveniet dicta soluta consequuntur error aperiam. Non, molestiae reprehenderit, nihil sed
+                        asperiores recusandae ut laboriosam odit doloremque minima dignissimos doloribus cumque illum
+                        ducimus.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web Applications</li>
+                            <li><span>Data Analytics</span><br>Designing Dashboards for Analysis</li>
+                            <li><span>Machine Learning</span><br>Designing Machine Learning Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>SEP 2023 - OCT 2023</span><br>Machine Learning/Data science Engineer Intern at
+                                YBI.</li>
+                            <li><span>JUNE 2023 - JULY 2023</span><br>Machine Learning Engineer Intern at Chirpy AI.
+                            </li>
+                            <li><span>SEP 2022 - OCT 2022</span><br>Artificial Intelligence Intern at YBI.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>Persuing Bachelors Degree from Sri Venkateswara University
+                                College of Engineering, Tirupati(Dist).</li>
+                            <li><span>2020</span><br>Completed Intermediate from Narayana Junior College,
+                                Dhanalakshmipuram, Nellore(Dist).</li>
+                            <li><span>2018</span><br>Completed Metriculation from Narayana High School, Venkatagiri,
+                                Nellore(Dist).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------Skills------------------------------------------------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <img src="images/design.png" alt="">
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex enim id doloribus magni,
+                        natus tempore deserunt porro ea cum eos, praesentium et dolorum dicta sequi odit voluptate
+                        aspernatur unde.</p>
+                    <a href="https://web.dev/learn" target="_blank">learn more</a>
+                </div>
+                <div>
+                    <img src="images/analysis.png" alt="">
+                    <h2>Data Analytics</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/" target="_blank">learn more</a>
+                </div>
+                <div>
+                    <img src="images/ai.png" alt="">
+                    <h2>Machine Learning</h2>
+                    <p>natus tempore deserunt porro ea cum eos, praesentium et dolorum dicta sequi odit voluptate
+                        aspernatur unde.</p>
+                    <a href="https://developers.google.com/machine-learning/crash-course" target="_blank">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------------------------------------------portfolio------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Portfolio</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>The platform that connects with me around the world. Walk together now.</p>
+                        <a href="https://github.com/KOMPALALOKESH/portfolio" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>codeGPT</h3>
+                        <p>The platform that connects with me around the world. Walk together now.</p>
+                        <a href="https://github.com/KOMPALALOKESH/codeGPT" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Sales Analytics</h3>
+                        <p>The platform that connects with me around the world. Walk together now.</p>
+                        <a href="https://github.com/KOMPALALOKESH/atliq-hardware-visualization" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------contact------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <P><i class="fas fa-paper-plane"></i> kompalalokesh123@gmail.com</P>
+                    <p><i class="fas fa-phone-square-alt"></i> 8328260402</p>
+                    <p>Connect me:- </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lokesh-kompala-979988214/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Lokesh12006066?t=qmbjx63l-Aa0RCS8UwuvUw&s=09" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/lokeshkompala/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/KOMPALALOKESH" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" cols="12" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" style="margin-top: 10px;">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; kompala. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        // console.log(GOOGLE_SHEET_AUTH);
+        const scriptURL = `https://script.google.com/macros/s/${GOOGLE_SHEET_AUTH}/exec`
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                        form.reset();
+                    }, 5000);
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
+
+    <script src="wrapText.js"></script>
+</body>
+
+</html>
