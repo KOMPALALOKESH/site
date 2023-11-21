@@ -1,0 +1,1 @@
+const GOOGLE_SHEET_AUTH = 'AKfycbzio117A1dTd7pTkstTCXpk3yqpznZDQ3K_5opCD9RkyqnYuuLgm4JPAZQQ0zMfp0R7gA'
